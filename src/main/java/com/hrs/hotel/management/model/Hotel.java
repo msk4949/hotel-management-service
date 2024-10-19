@@ -32,5 +32,9 @@ public class Hotel {
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Room> rooms = new ArrayList<>();
 
+    @Column(name="permenent_address")
+    private String permenetAddress;
+
+
 
 }
